@@ -1,0 +1,8 @@
+const parent = document.querySelector('.quotation-container'),
+child = document.querySelector('.prevent-scroll');
+
+if (parent.contains(child)) {
+document.querySelector('body').style.overflow = 'hidden';
+}else{
+ document.querySelector('body').style.overflow = 'visible';
+}
